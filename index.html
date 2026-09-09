@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Institut de l'Encrier</title>
+    <meta
+      name="description"
+      content="Institut de l'Encrier — institut de beauté permanente et de tatouage à Kinshasa. Lips neutralisation, transformation sourcils, tatouage."
+    />
+    <link rel="icon" type="image/png" href="assets/images/web/logo.png" />
+    <link rel="apple-touch-icon" href="assets/images/web/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Intro overlay: home page only -->
+    <div id="intro-overlay">
+      <p id="intro-eyebrow" data-i18n="intro.eyebrow">Institut de l'Encrier</p>
+      <h1 id="intro-title" data-i18n="intro.title">L'encre a une histoire</h1>
+    </div>
+
+    <header id="main-header">
+      <div class="container header-bar">
+        <a href="index.html" class="wordmark">
+          <img src="assets/images/web/logo.png" alt="L'Institut de l'Encrier" class="logo" />
+        </a>
+        <nav class="desktop-nav">
+          <a href="index.html#services" data-i18n="nav.services">Services</a>
+          <a href="galerie.html" data-i18n="nav.gallery">Galerie</a>
+          <a href="index.html#a-propos" data-i18n="nav.about">À propos</a>
+          <a href="contact.html" class="btn" data-i18n="nav.contact">Contact</a>
+          <div class="lang-switch">
+            <button class="lang-toggle" aria-expanded="false" aria-haspopup="true" data-i18n-attr="aria-label:aria.changeLanguage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3 12h18" />
+                <path d="M12 3c2.5 2.7 4 6 4 9s-1.5 6.3-4 9c-2.5-2.7-4-6-4-9s1.5-6.3 4-9z" />
+              </svg>
+              <span class="lang-current">FR</span>
+            </button>
+            <div class="lang-options">
+              <button class="lang-btn is-active" data-lang-toggle="fr" aria-pressed="true">Français</button>
+              <button class="lang-btn" data-lang-toggle="en" aria-pressed="false">English</button>
+            </div>
+          </div>
+        </nav>
+        <button id="menu-burger" aria-expanded="false" aria-controls="menu-overlay">
+          <span class="sr-only" data-i18n="aria.toggleMenu">Menu</span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <div id="menu-overlay" aria-hidden="true" inert>
+      <div class="menu-overlay-bg"></div>
+      <div class="menu-overlay-content container">
+        <nav>
+          <p class="mobile-link"><a href="index.html" data-i18n="menu.home">Accueil</a></p>
+          <p class="mobile-link"><a href="index.html#services" data-i18n="nav.services">Services</a></p>
+          <p class="mobile-link"><a href="galerie.html" data-i18n="nav.gallery">Galerie</a></p>
+          <p class="mobile-link"><a href="index.html#a-propos" data-i18n="nav.about">À propos</a></p>
+          <p class="mobile-link"><a href="contact.html" data-i18n="nav.contact">Contact</a></p>
+        </nav>
+        <div class="lang-switch">
+          <button class="lang-toggle" aria-expanded="false" aria-haspopup="true" data-i18n-attr="aria-label:aria.changeLanguage">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M3 12h18" />
+              <path d="M12 3c2.5 2.7 4 6 4 9s-1.5 6.3-4 9c-2.5-2.7-4-6-4-9s1.5-6.3 4-9z" />
+            </svg>
+            <span class="lang-current">FR</span>
+          </button>
+          <div class="lang-options">
+            <button class="lang-btn is-active" data-lang-toggle="fr" aria-pressed="true">Français</button>
+            <button class="lang-btn" data-lang-toggle="en" aria-pressed="false">English</button>
+          </div>
+        </div>
+        <p class="menu-overlay-footer" data-i18n="menu.footerLocation">Institut de l'Encrier — Kinshasa, RDC</p>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="assets/images/web/statue-logo.jpg"
+        >
+          <source src="assets/video/hero-loop.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-scrim"></div>
+        <div class="container hero-content">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Institut de l'Encrier</p>
+          <h1 data-i18n="hero.title">L'encre a une histoire.</h1>
+          <p class="hero-lede" data-i18n="hero.lede">
+            Un institut de beauté permanente et de tatouage à Kinshasa —
+            sourcils, lèvres, et l'attention portée à chaque détail.
+          </p>
+          <div class="hero-cta">
+            <a href="contact.html" class="btn primary" data-i18n="hero.ctaPrimary">Prendre rendez-vous</a>
+            <a href="galerie.html" class="btn" data-i18n="hero.ctaSecondary">Voir la galerie</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <p class="eyebrow reveal" data-i18n="services.eyebrow">Ce que nous proposons</p>
+          <h2 class="reveal" data-i18n="services.title">Trois soins confirmés — d'autres à préciser avec l'atelier.</h2>
+          <div class="tilt-grid">
+            <article data-tilt-card>
+              <div class="liquid-monolith-card-glare"></div>
+              <p class="card-index">01</p>
+              <h3 data-i18n="services.c1Title">Lips Neutralisation</h3>
+              <p data-i18n="services.c1Body">Neutraliser la pigmentation naturelle des lèvres avant une mise en couleur.</p>
+            </article>
+            <article data-tilt-card>
+              <div class="liquid-monolith-card-glare"></div>
+              <p class="card-index">02</p>
+              <h3 data-i18n="services.c2Title">Transformation Sourcils</h3>
+              <p data-i18n="services.c2Body">Redessiner et densifier le sourcil, résultat visible avant/après.</p>
+            </article>
+            <article data-tilt-card>
+              <div class="liquid-monolith-card-glare"></div>
+              <p class="card-index">03</p>
+              <h3 data-i18n="services.c3Title">Tatouage</h3>
+              <p data-i18n="services.c3Body">Une équipe bien formée, pour des projets de tatouage sur rendez-vous.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <p class="eyebrow reveal" data-i18n="galleryPreview.eyebrow">Galerie</p>
+          <h2 class="reveal" data-i18n="galleryPreview.title">Un aperçu du travail et de l'espace.</h2>
+          <div class="gallery-grid" style="margin-top: var(--space-4);">
+            <div class="gallery-tile">
+              <div class="gallery-inner">
+                <img src="assets/images/web/lips-neutralisation.jpg" alt="Lips neutralisation — avant / après" />
+              </div>
+              <span class="gallery-tile-label" data-i18n="galleryPreview.tile1">Lips neutralisation</span>
+            </div>
+            <div class="gallery-tile">
+              <div class="gallery-inner">
+                <img src="assets/images/web/sourcils-transformation.jpg" alt="Transformation sourcils — avant / après" />
+              </div>
+              <span class="gallery-tile-label" data-i18n="galleryPreview.tile2">Sourcils</span>
+            </div>
+            <div class="gallery-tile">
+              <div class="gallery-inner">
+                <img src="assets/images/web/treatment-room.jpg" alt="Salle de soin de l'Institut de l'Encrier" />
+              </div>
+              <span class="gallery-tile-label" data-i18n="galleryPreview.tile3">L'espace</span>
+            </div>
+          </div>
+          <p class="reveal" style="margin-top: var(--space-4);">
+            <a class="btn" href="galerie.html" data-i18n="galleryPreview.cta">Voir la galerie complète →</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="a-propos">
+        <div class="container split">
+          <div class="reveal">
+            <p class="eyebrow" data-i18n="about.eyebrow">À propos</p>
+            <h2 data-i18n="about.title">L'histoire de l'Institut de l'Encrier.</h2>
+            <p data-i18n="about.p1">
+              Fondé en 2025 à Kinshasa par Jessica Bossekota, l'Institut de
+              l'Encrier se présente comme un « community club » plutôt
+              qu'un simple salon — un lieu pensé pour l'attention portée à
+              chaque détail.
+            </p>
+            <p data-i18n="about.p2">
+              Aux soins de beauté permanente s'ajoute le tatouage, assuré
+              par une équipe bien formée.
+            </p>
+          </div>
+          <div class="reveal">
+            <img
+              src="assets/images/web/ribbon-cutting.jpg"
+              alt="Inauguration de l'Institut de l'Encrier"
+              data-i18n-attr="alt:about.imgAlt"
+              style="border-radius: var(--radius-md); aspect-ratio: 4/5; object-fit: cover; width: 100%;"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-band reveal">
+            <p class="eyebrow" data-i18n="ctaBand.eyebrow">Rendez-vous</p>
+            <h2 data-i18n="ctaBand.title">Prêt·e à en discuter ?</h2>
+            <p style="max-width: 46ch; margin-inline: auto;" data-i18n="ctaBand.body">
+              Un premier échange pour parler de votre projet, avant toute
+              séance.
+            </p>
+            <a href="contact.html" class="btn primary" data-i18n="ctaBand.button">Nous contacter</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="footer-top-line"></div>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="wordmark">
+              <img src="assets/images/web/logo.png" alt="L'Institut de l'Encrier" class="logo" />
+            </a>
+            <p data-i18n="footer.city">Kinshasa, RDC</p>
+          </div>
+          <div class="footer-column">
+            <h3 data-i18n="footer.navHeading">Navigation</h3>
+            <a href="index.html#services" data-i18n="nav.services">Services</a>
+            <a href="galerie.html" data-i18n="nav.gallery">Galerie</a>
+            <a href="index.html#a-propos" data-i18n="nav.about">À propos</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          </div>
+          <div class="footer-column">
+            <h3 data-i18n="footer.followHeading">Suivez-nous</h3>
+            <a href="https://www.instagram.com/institutdelencrier/" target="_blank" rel="noopener" data-i18n-attr="aria-label:aria.instagram">Instagram</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> Institut de l'Encrier.</span>
+          <span data-i18n="footer.statusNote">Site en construction — contenu à finaliser avec le client.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/vendor/gsap.min.js" defer></script>
+    <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/intro-timeline.js" defer></script>
+    <script src="assets/js/nav-menu.js" defer></script>
+    <script src="assets/js/liquid-glass-cards.js" defer></script>
+    <script src="assets/js/footer-animation.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Institut de l'Encrier</title>
+    <link rel="icon" type="image/png" href="assets/images/web/logo.png" />
+    <link rel="apple-touch-icon" href="assets/images/web/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="container header-bar">
+        <a href="index.html" class="wordmark">
+          <img src="assets/images/web/logo.png" alt="L'Institut de l'Encrier" class="logo" />
+        </a>
+        <nav class="desktop-nav">
+          <a href="index.html#services" data-i18n="nav.services">Services</a>
+          <a href="galerie.html" data-i18n="nav.gallery">Galerie</a>
+          <a href="index.html#a-propos" data-i18n="nav.about">À propos</a>
+          <a href="contact.html" class="btn" data-i18n="nav.contact">Contact</a>
+          <div class="lang-switch">
+            <button class="lang-toggle" aria-expanded="false" aria-haspopup="true" data-i18n-attr="aria-label:aria.changeLanguage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3 12h18" />
+                <path d="M12 3c2.5 2.7 4 6 4 9s-1.5 6.3-4 9c-2.5-2.7-4-6-4-9s1.5-6.3 4-9z" />
+              </svg>
+              <span class="lang-current">FR</span>
+            </button>
+            <div class="lang-options">
+              <button class="lang-btn is-active" data-lang-toggle="fr" aria-pressed="true">Français</button>
+              <button class="lang-btn" data-lang-toggle="en" aria-pressed="false">English</button>
+            </div>
+          </div>
+        </nav>
+        <button id="menu-burger" aria-expanded="false" aria-controls="menu-overlay">
+          <span class="sr-only" data-i18n="aria.toggleMenu">Menu</span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <div id="menu-overlay" aria-hidden="true" inert>
+      <div class="menu-overlay-bg"></div>
+      <div class="menu-overlay-content container">
+        <nav>
+          <p class="mobile-link"><a href="index.html" data-i18n="menu.home">Accueil</a></p>
+          <p class="mobile-link"><a href="index.html#services" data-i18n="nav.services">Services</a></p>
+          <p class="mobile-link"><a href="galerie.html" data-i18n="nav.gallery">Galerie</a></p>
+          <p class="mobile-link"><a href="index.html#a-propos" data-i18n="nav.about">À propos</a></p>
+          <p class="mobile-link"><a href="contact.html" data-i18n="nav.contact">Contact</a></p>
+        </nav>
+        <div class="lang-switch">
+          <button class="lang-toggle" aria-expanded="false" aria-haspopup="true" data-i18n-attr="aria-label:aria.changeLanguage">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M3 12h18" />
+              <path d="M12 3c2.5 2.7 4 6 4 9s-1.5 6.3-4 9c-2.5-2.7-4-6-4-9s1.5-6.3 4-9z" />
+            </svg>
+            <span class="lang-current">FR</span>
+          </button>
+          <div class="lang-options">
+            <button class="lang-btn is-active" data-lang-toggle="fr" aria-pressed="true">Français</button>
+            <button class="lang-btn" data-lang-toggle="en" aria-pressed="false">English</button>
+          </div>
+        </div>
+        <p class="menu-overlay-footer" data-i18n="menu.footerLocation">Institut de l'Encrier — Kinshasa, RDC</p>
+      </div>
+    </div>
+
+    <main>
+      <section class="section" style="padding-top: var(--space-8);">
+        <div class="container">
+          <p class="eyebrow reveal" data-i18n="contactPage.eyebrow">Contact</p>
+          <h1 class="reveal" data-i18n="contactPage.title">Parlons de votre projet.</h1>
+          <p class="reveal" style="max-width: 50ch;" data-i18n="contactPage.lede">
+            Un premier échange pour parler de votre projet — sans
+            engagement.
+          </p>
+
+          <form id="contact-form" class="contact-form reveal">
+            <label>
+              <span data-i18n="contactPage.labelName">Nom</span>
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+            <label>
+              <span data-i18n="contactPage.labelEmail">E-mail</span>
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label>
+              <span data-i18n="contactPage.labelSoin">Soin souhaité</span>
+              <select name="soin">
+                <option value="" data-i18n="contactPage.soinPlaceholder">À préciser</option>
+                <option value="lips-neutralisation" data-i18n="contactPage.soinLips">Lips neutralisation</option>
+                <option value="sourcils" data-i18n="contactPage.soinSourcils">Transformation sourcils</option>
+                <option value="tatouage" data-i18n="contactPage.soinTattoo">Tatouage</option>
+                <option value="autre" data-i18n="contactPage.soinAutre">Autre</option>
+              </select>
+            </label>
+            <label>
+              <span data-i18n="contactPage.labelMessage">Message</span>
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <p id="form-status" class="form-status" role="status"></p>
+            <button type="submit" class="btn primary" data-i18n="contactPage.submit">Envoyer</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="footer-top-line"></div>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="wordmark">
+              <img src="assets/images/web/logo.png" alt="L'Institut de l'Encrier" class="logo" />
+            </a>
+            <p data-i18n="footer.city">Kinshasa, RDC</p>
+          </div>
+          <div class="footer-column">
+            <h3 data-i18n="footer.navHeading">Navigation</h3>
+            <a href="index.html#services" data-i18n="nav.services">Services</a>
+            <a href="galerie.html" data-i18n="nav.gallery">Galerie</a>
+            <a href="index.html#a-propos" data-i18n="nav.about">À propos</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          </div>
+          <div class="footer-column">
+            <h3 data-i18n="footer.followHeading">Suivez-nous</h3>
+            <a href="https://www.instagram.com/institutdelencrier/" target="_blank" rel="noopener" data-i18n-attr="aria-label:aria.instagram">Instagram</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> Institut de l'Encrier.</span>
+          <span data-i18n="footer.statusNote">Site en construction — contenu à finaliser avec le client.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/vendor/gsap.min.js" defer></script>
+    <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/nav-menu.js" defer></script>
+    <script src="assets/js/footer-animation.js" defer></script>
+    <script defer>
+      /* Mock submit — no backend wired yet (see BUILD-NOTES.md: booking
+         mechanism not confirmed). Status text pulled from window.ideI18n
+         so it respects whichever language is currently active. */
+      document.addEventListener("DOMContentLoaded", function () {
+        var form = document.getElementById("contact-form");
+        var status = document.getElementById("form-status");
+        if (!form) return;
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var t = window.ideI18n ? window.ideI18n.t : function (k) { return k; };
+          status.textContent = t("contactPage.statusSending");
+          status.className = "form-status";
+          setTimeout(function () {
+            status.textContent = t("contactPage.statusSuccess");
+            status.className = "form-status success";
+            form.reset();
+          }, 700);
+        });
+      });
+    </script>
+  </body>
+</html>

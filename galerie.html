@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie — Institut de l'Encrier</title>
+    <link rel="icon" type="image/png" href="assets/images/web/logo.png" />
+    <link rel="apple-touch-icon" href="assets/images/web/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="container header-bar">
+        <a href="index.html" class="wordmark">
+          <img src="assets/images/web/logo.png" alt="L'Institut de l'Encrier" class="logo" />
+        </a>
+        <nav class="desktop-nav">
+          <a href="index.html#services" data-i18n="nav.services">Services</a>
+          <a href="galerie.html" data-i18n="nav.gallery">Galerie</a>
+          <a href="index.html#a-propos" data-i18n="nav.about">À propos</a>
+          <a href="contact.html" class="btn" data-i18n="nav.contact">Contact</a>
+          <div class="lang-switch">
+            <button class="lang-toggle" aria-expanded="false" aria-haspopup="true" data-i18n-attr="aria-label:aria.changeLanguage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3 12h18" />
+                <path d="M12 3c2.5 2.7 4 6 4 9s-1.5 6.3-4 9c-2.5-2.7-4-6-4-9s1.5-6.3 4-9z" />
+              </svg>
+              <span class="lang-current">FR</span>
+            </button>
+            <div class="lang-options">
+              <button class="lang-btn is-active" data-lang-toggle="fr" aria-pressed="true">Français</button>
+              <button class="lang-btn" data-lang-toggle="en" aria-pressed="false">English</button>
+            </div>
+          </div>
+        </nav>
+        <button id="menu-burger" aria-expanded="false" aria-controls="menu-overlay">
+          <span class="sr-only" data-i18n="aria.toggleMenu">Menu</span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <div id="menu-overlay" aria-hidden="true" inert>
+      <div class="menu-overlay-bg"></div>
+      <div class="menu-overlay-content container">
+        <nav>
+          <p class="mobile-link"><a href="index.html" data-i18n="menu.home">Accueil</a></p>
+          <p class="mobile-link"><a href="index.html#services" data-i18n="nav.services">Services</a></p>
+          <p class="mobile-link"><a href="galerie.html" data-i18n="nav.gallery">Galerie</a></p>
+          <p class="mobile-link"><a href="index.html#a-propos" data-i18n="nav.about">À propos</a></p>
+          <p class="mobile-link"><a href="contact.html" data-i18n="nav.contact">Contact</a></p>
+        </nav>
+        <div class="lang-switch">
+          <button class="lang-toggle" aria-expanded="false" aria-haspopup="true" data-i18n-attr="aria-label:aria.changeLanguage">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M3 12h18" />
+              <path d="M12 3c2.5 2.7 4 6 4 9s-1.5 6.3-4 9c-2.5-2.7-4-6-4-9s1.5-6.3 4-9z" />
+            </svg>
+            <span class="lang-current">FR</span>
+          </button>
+          <div class="lang-options">
+            <button class="lang-btn is-active" data-lang-toggle="fr" aria-pressed="true">Français</button>
+            <button class="lang-btn" data-lang-toggle="en" aria-pressed="false">English</button>
+          </div>
+        </div>
+        <p class="menu-overlay-footer" data-i18n="menu.footerLocation">Institut de l'Encrier — Kinshasa, RDC</p>
+      </div>
+    </div>
+
+    <main>
+      <section class="section" style="padding-top: var(--space-8);">
+        <div class="container">
+          <p class="eyebrow reveal" data-i18n="galleryPage.eyebrow">Galerie</p>
+          <h1 class="reveal" data-i18n="galleryPage.title">Le travail et l'espace.</h1>
+          <p class="reveal" style="max-width: 60ch;" data-i18n="galleryPage.intro">
+            Photos tirées du compte Instagram et de vidéos de l'ouverture de
+            l'Institut.
+          </p>
+
+          <div class="filter-bar reveal">
+            <button class="filter-chip is-active" data-filter-chip="all" data-i18n="galleryPage.filterAll">Tout</button>
+            <button class="filter-chip" data-filter-chip="avant-apres" data-i18n="galleryPage.filterAvantApres">Avant / Après</button>
+            <button class="filter-chip" data-filter-chip="espace" data-i18n="galleryPage.filterEspace">L'espace</button>
+            <button class="filter-chip" data-filter-chip="marque" data-i18n="galleryPage.filterMarque">La marque</button>
+          </div>
+
+          <div class="gallery-grid" id="gallery-grid">
+            <div class="gallery-tile" data-filter-card data-category="avant-apres">
+              <div class="gallery-inner">
+                <img src="assets/images/web/lips-neutralisation.jpg" alt="Lips neutralisation — avant / après" />
+              </div>
+              <span class="gallery-tile-label" data-i18n="galleryPage.tLips">Lips neutralisation</span>
+            </div>
+            <div class="gallery-tile" data-filter-card data-category="avant-apres">
+              <div class="gallery-inner">
+                <img src="assets/images/web/sourcils-transformation.jpg" alt="Transformation sourcils — avant / après" />
+              </div>
+              <span class="gallery-tile-label" data-i18n="galleryPage.tSourcils">Sourcils</span>
+            </div>
+            <div class="gallery-tile" data-filter-card data-category="espace">
+              <div class="gallery-inner">
+                <img src="assets/images/web/treatment-room.jpg" alt="Salle de soin" />
+              </div>
+              <span class="gallery-tile-label" data-i18n="galleryPage.tTreatmentRoom">Salle de soin</span>
+            </div>
+            <div class="gallery-tile" data-filter-card data-category="espace">
+              <div class="gallery-inner">
+                <img src="assets/images/web/reception-lounge.jpg" alt="Espace lounge / réception" />
+              </div>
+              <span class="gallery-tile-label" data-i18n="galleryPage.tLounge">Lounge</span>
+            </div>
+            <div class="gallery-tile" data-filter-card data-category="espace">
+              <div class="gallery-inner">
+                <img src="assets/images/web/hygiene-tray.jpg" alt="Plateau d'hygiène à usage unique" />
+              </div>
+              <span class="gallery-tile-label" data-i18n="galleryPage.tHygiene">Hygiène</span>
+            </div>
+            <div class="gallery-tile" data-filter-card data-category="espace">
+              <div class="gallery-inner">
+                <img src="assets/images/web/chess-lounge.jpg" alt="Coin lounge de l'Institut" />
+              </div>
+              <span class="gallery-tile-label" data-i18n="galleryPage.tChess">Coin lounge</span>
+            </div>
+            <div class="gallery-tile" data-filter-card data-category="marque">
+              <div class="gallery-inner">
+                <img src="assets/images/web/storefront-sign.jpg" alt="Enseigne de l'Institut de l'Encrier" />
+              </div>
+              <span class="gallery-tile-label" data-i18n="galleryPage.tFacade">Façade</span>
+            </div>
+            <div class="gallery-tile" data-filter-card data-category="marque">
+              <div class="gallery-inner">
+                <img src="assets/images/web/backlit-monogram.jpg" alt="Monogramme rétroéclairé" />
+              </div>
+              <span class="gallery-tile-label" data-i18n="galleryPage.tMonogram">Monogramme</span>
+            </div>
+            <div class="gallery-tile" data-filter-card data-category="marque">
+              <div class="gallery-inner">
+                <img src="assets/images/web/monogram-wall.jpg" alt="Monogramme sur mur" />
+              </div>
+              <span class="gallery-tile-label" data-i18n="galleryPage.tMonogram">Monogramme</span>
+            </div>
+            <div class="gallery-tile" data-filter-card data-category="marque">
+              <div class="gallery-inner">
+                <img src="assets/images/web/statue-logo.jpg" alt="Buste et logo de l'Institut" />
+              </div>
+              <span class="gallery-tile-label" data-i18n="galleryPage.tIdentity">Identité</span>
+            </div>
+            <div class="gallery-tile" data-filter-card data-category="marque">
+              <div class="gallery-inner">
+                <img src="assets/images/web/editorial-poster.jpg" alt="Affiche éditoriale de la marque" />
+              </div>
+              <span class="gallery-tile-label" data-i18n="galleryPage.tEditorial">Éditorial</span>
+            </div>
+            <div class="gallery-tile" data-filter-card data-category="marque">
+              <div class="gallery-inner">
+                <img src="assets/images/web/flash-art.jpg" alt="Planches d'inspiration exposées" />
+              </div>
+              <span class="gallery-tile-label" data-i18n="galleryPage.tInspiration">Inspiration</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="lightbox" aria-hidden="true">
+      <button id="lightbox-close" aria-label="Fermer">&times;</button>
+      <div id="lightbox-content"></div>
+    </div>
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="footer-top-line"></div>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="wordmark">
+              <img src="assets/images/web/logo.png" alt="L'Institut de l'Encrier" class="logo" />
+            </a>
+            <p data-i18n="footer.city">Kinshasa, RDC</p>
+          </div>
+          <div class="footer-column">
+            <h3 data-i18n="footer.navHeading">Navigation</h3>
+            <a href="index.html#services" data-i18n="nav.services">Services</a>
+            <a href="galerie.html" data-i18n="nav.gallery">Galerie</a>
+            <a href="index.html#a-propos" data-i18n="nav.about">À propos</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          </div>
+          <div class="footer-column">
+            <h3 data-i18n="footer.followHeading">Suivez-nous</h3>
+            <a href="https://www.instagram.com/institutdelencrier/" target="_blank" rel="noopener" data-i18n-attr="aria-label:aria.instagram">Instagram</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> Institut de l'Encrier.</span>
+          <span data-i18n="footer.statusNote">Site en construction — contenu à finaliser avec le client.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/vendor/gsap.min.js" defer></script>
+    <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/nav-menu.js" defer></script>
+    <script src="assets/js/footer-animation.js" defer></script>
+    <script src="assets/js/gallery.js" defer></script>
+  </body>
+</html>
